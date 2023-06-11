@@ -1,0 +1,8 @@
+@import "breakpoints";
+
+.results-card {
+    
+    @media screen and (min-width: $mobile) {
+        width: 50%;
+    }
+}
