@@ -1,7 +1,19 @@
 @import "breakpoints";
 
 .results-card {
-    
+
+    &__title {}
+
+    &__score-container {}
+
+    &__score {}
+
+    &__from {}
+
+    &__assessment {}
+
+    &__copy {}
+
     @media screen and (min-width: $mobile) {
         width: 50%;
     }
