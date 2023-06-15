@@ -1,14 +1,31 @@
 @import "breakpoints";
+@import "colors";
+@import "fonts";
 
 .summary-card {
+    box-sizing: border-box;
+    padding: 2.4rem 3.2rem 2.9rem;
 
     @media screen and (min-width: $mobile) {
         width: 50%;
     }
 
-    &__title {}
+    &__title {
+        font: {
+            family: $font-stack;
+            size: 1.8rem;
+            weight: $bold;
+        }
 
-    &__row {}
+        margin: 0 0 2.5rem;
+    }
+
+    &__row {
+        background-color: gray;
+        border-radius: 1rem;
+        margin: 0 0 1.7rem;
+        padding: 1.7rem 1.4rem;
+    }
 
     &__row--reaction {}
 
@@ -18,19 +35,45 @@
 
     &__row--visual {}
 
-    &__img {}
+    &__img {
+        margin-right: 1rem;
+        vertical-align: bottom;
+    }
 
-    &__row-text {}
+    &__row-text {
+        font: {
+            family: $font-stack;
+            size: 1.65rem;
+            weight: $medium;
+        }
+    }
 
     &__row-text--reaction {}
-    
+
     &__row-text--memory {}
-    
+
     &__row-text--verbal {}
-    
+
     &__row-text--visual {}
 
-    &__row-text--score {}
+    &__row-text--score {
+        font: {
+            family: $font-stack;
+            size: 1.65rem;
+            weight: $medium;
+        }
+    }
 
-    &__continue__btn {}
+    &__continue-btn {
+        font : {
+            family: $font-stack;
+            size: 1.8rem;
+            weight: $bold;
+        }
+
+        border-radius: 2.6rem;
+        margin-top: 0.9rem;
+        padding: 1.5rem;
+        width: 100%;
+    }
 }

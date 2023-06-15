@@ -1,20 +1,86 @@
 @import "breakpoints";
+@import "colors";
+@import "fonts";
 
 .results-card {
-
-    &__title {}
-
-    &__score-container {}
-
-    &__score {}
-
-    &__from {}
-
-    &__assessment {}
-
-    &__copy {}
+    box-sizing: border-box;
+    padding: 2.3rem 5rem 2.5rem;
 
     @media screen and (min-width: $mobile) {
         width: 50%;
     }
+
+    &__title {
+        font: {
+            family: $font-stack;
+            size: 1.8rem;
+            weight: $bold;
+        }
+
+        margin: 0 0 2.5rem;
+        text-align: center;
+    }
+
+    &__score-container-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.35rem;
+    }
+
+    &__score-container {
+        border-radius: 50%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2.3rem;
+        width: 51%
+    }
+
+    &__score {
+        font: {
+            family: $font-stack;
+            size: 6rem;
+            weight: $extra-bold;
+        }
+
+        margin: 0 0 -0.5rem;
+        text-align: center;
+    }
+
+    &__from {
+        font: {
+            family: $font-stack;
+            size: 1.65rem;
+            weight: $medium;
+        }
+
+        margin: 0;
+        text-align: center;
+    }
+
+    &__assessment {
+        font: {
+            family: $font-stack;
+            size: 2.5rem;
+            weight: $extra-bold;
+        }
+
+        margin: 0 0 0.65rem;
+        text-align: center;
+    }
+
+    &__copy {
+        font: {
+            family: $font-stack;
+            size: 1.48rem;
+            weight: $bold;
+        }
+
+        letter-spacing: 0.05rem;
+        line-height: 1.4;
+        margin-top: 0;
+        text-align: center;
+    }
+
 }

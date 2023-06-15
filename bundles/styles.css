@@ -3,17 +3,17 @@ html {
 }
 
 .page {
-  margin: 0;
+  margin: 2rem 0 0;
 }
 
 .card-wrapper {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   justify-content: center;
   min-height: 100vh;
   background-color: gray;
   background-image: url("../design/mobile-design.jpg");
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 576px) {
@@ -26,8 +26,8 @@ html {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 37.5rem;
-  border: solid black 1px;
+  width: 37.7rem;
+  box-sizing: border-box;
   opacity: 1;
 }
 @media screen and (min-width: 576px) {
@@ -38,17 +38,112 @@ html {
   }
 }
 
+.results-card {
+  box-sizing: border-box;
+  padding: 2.3rem 5rem 2.5rem;
+}
 @media screen and (min-width: 576px) {
   .results-card {
     width: 50%;
   }
 }
+.results-card__title {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 2.5rem;
+  text-align: center;
+}
+.results-card__score-container-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.35rem;
+}
+.results-card__score-container {
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.3rem;
+  width: 51%;
+}
+.results-card__score {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  margin: 0 0 -0.5rem;
+  text-align: center;
+}
+.results-card__from {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+}
+.results-card__assessment {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 0.65rem;
+  text-align: center;
+}
+.results-card__copy {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.48rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  line-height: 1.4;
+  margin-top: 0;
+  text-align: center;
+}
 
+.summary-card {
+  box-sizing: border-box;
+  padding: 2.4rem 3.2rem 2.9rem;
+}
 @media screen and (min-width: 576px) {
   .summary-card {
     width: 50%;
   }
 }
+.summary-card__title {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 2.5rem;
+}
+.summary-card__row {
+  background-color: gray;
+  border-radius: 1rem;
+  margin: 0 0 1.7rem;
+  padding: 1.7rem 1.4rem;
+}
+.summary-card__img {
+  margin-right: 1rem;
+  vertical-align: bottom;
+}
+.summary-card__row-text {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+.summary-card__row-text--score {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.65rem;
+  font-weight: 500;
+}
+.summary-card__continue-btn {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-radius: 2.6rem;
+  margin-top: 0.9rem;
+  padding: 1.5rem;
+  width: 100%;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
