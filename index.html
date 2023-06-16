@@ -25,11 +25,9 @@
 
       <div class="results-card">
         <h1 class="results-card__title">Your Result</h1>
-        <div class="results-card__score-container-wrapper">
-          <div class="results-card__score-container">
-            <p class="results-card__score">76</p>
-            <p class="results-card__from">of 100</p>
-          </div>
+        <div class="results-card__score-container">
+          <p class="results-card__score">76</p>
+          <p class="results-card__from">of 100</p>
         </div>
         <h2 class="results-card__assessment">Great</h2>
         <p class="results-card__copy">You scored higher than 65% of the people who have taken these tests.</p>
@@ -39,31 +37,47 @@
         <h3 class="summary-card__title">Summary</h3>
 
         <div class="summary-card__row summary-card__row--reaction">
-          <img class="summary-card__img" src="./assets/images/icon-reaction.svg">
-          <span class="summary-card__row-text summary-card__row-text--reaction">Reaction</span>
-          <span class="summary-card__row-text summary-card__row-text--score">80</span>
-          <span class="summary-card__row-text">/ 100</span>
+          <div>
+            <img class="summary-card__img" src="./assets/images/icon-reaction.svg">
+            <span class="summary-card__category summary-card__category--reaction">Reaction</span>
+          </div>
+          <div class="summary-card__grade">
+            <span class="summary-card__grade summary-card__grade--reaction">80</span>
+            <span class="summary-card__grade">/ 100</span>
+          </div>
         </div>
 
         <div class="summary-card__row summary-card__row--memory">
-          <img class="summary-card__img" src="./assets/images/icon-memory.svg">
-          <span class="summary-card__row-text summary-card__row-text--memory">Memory</span>
-          <span class="summary-card__row-text summary-card__row-text--score">92</span>
-          <span class="summary-card__row-text">/ 100</span>
+          <div>
+            <img class="summary-card__img" src="./assets/images/icon-memory.svg">
+            <span class="summary-card__category summary-card__category--memory">Memory</span>
+          </div>
+          <div>
+            <span class="summary-card__grade summary-card__grade--memory">92</span>
+            <span class="summary-card__grade">/ 100</span>
+          </div>
         </div>
 
         <div class="summary-card__row summary-card__row--verbal">
-          <img class="summary-card__img" src="./assets/images/icon-verbal.svg">
-          <span class="summary-card__row-text summary-card__row-text--verbal">Verbal</span>
-          <span class="summary-card__row-text summary-card__row-text--score">61</span>
-          <span class="summary-card__row-text">/ 100</span>
+          <div>
+            <img class="summary-card__img" src="./assets/images/icon-verbal.svg">
+            <span class="summary-card__category summary-card__category--verbal">Verbal</span>
+          </div>
+          <div>
+            <span class="summary-card__grade summary-card__grade--verbal">61</span>
+            <span class="summary-card__grade">/ 100</span>
+          </div>
         </div>
 
         <div class="summary-card__row summary-card__row--visual">
-          <img class="summary-card__img" src="./assets/images/icon-visual.svg">
-          <span class="summary-card__row-text summary-card__row-text--visual">Visual</span>
-          <span class="summary-card__row-text summary-card__row-text--score">72</span>
-          <span class="summary-card__row-text">/ 100</span>
+          <div>
+            <img class="summary-card__img" src="./assets/images/icon-visual.svg">
+            <span class="summary-card__category summary-card__category--visual">Visual</span>
+          </div>
+          <div>
+            <span class="summary-card__grade summary-card__grade--visual">72</span>
+            <span class="summary-card__grade">/ 100</span>
+          </div>
         </div>
 
         <button class="summary-card__continue-btn">Continue</button>

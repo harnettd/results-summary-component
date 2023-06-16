@@ -7,11 +7,10 @@
     width: 37.7rem;
 
     @media screen and (min-width: $mobile) {
-        border-radius: 2rem;
+        border-radius: 3.3rem;
         flex-direction: row;
-        width: 73.5rem;
+        width: 73.6rem;
     }
 
-    box-sizing: border-box;
-    opacity: 1;
+    opacity: 0.5;
 }

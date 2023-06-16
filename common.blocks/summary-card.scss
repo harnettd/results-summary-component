@@ -7,6 +7,7 @@
     padding: 2.4rem 3.2rem 2.9rem;
 
     @media screen and (min-width: $mobile) {
+        padding: 3.8rem 4rem;
         width: 50%;
     }
 
@@ -18,54 +19,109 @@
         }
 
         margin: 0 0 2.5rem;
+
+        @media screen and (min-width: $mobile) {
+            font-size: 2.4rem;
+            margin-bottom: 3rem;
+        }
     }
 
     &__row {
-        background-color: gray;
         border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         margin: 0 0 1.7rem;
         padding: 1.7rem 1.4rem;
+
+        @media screen and (min-width: $mobile) {
+            margin-bottom: 1.2rem;
+            padding: 1.7rem 1.6rem;
+        }
     }
 
-    &__row--reaction {}
+    &__row--reaction {
+        background-color: gray;
+    }
 
-    &__row--memory {}
+    &__row--memory {
+        background-color: gray;
+    }
 
-    &__row--verbal {}
+    &__row--verbal {
+        background-color: gray;
+    }
 
-    &__row--visual {}
+    &__row--visual {
+        background-color: gray;
+    }
 
     &__img {
         margin-right: 1rem;
         vertical-align: bottom;
     }
 
-    &__row-text {
+    &__category {
         font: {
             family: $font-stack;
             size: 1.65rem;
             weight: $medium;
+        }
+
+        @media screen and (min-width: $mobile) {
+            font-size: 1.8rem;
         }
     }
 
-    &__row-text--reaction {}
+    &__category--reaction {
+        color: black;
+    }
 
-    &__row-text--memory {}
+    &__category--memory {
+        color: black;
+    }
 
-    &__row-text--verbal {}
+    &__category--verbal {
+        color: black;
+    }
 
-    &__row-text--visual {}
+    &__category--visual {
+        color: black;
+    }
 
-    &__row-text--score {
+    &__grade {
         font: {
             family: $font-stack;
             size: 1.65rem;
-            weight: $medium;
+            weight: $bold;
         }
+
+        letter-spacing: 0.03rem;
+
+        @media screen and (min-width: $mobile) {
+            font-size: 1.9rem;
+            letter-spacing: 0;
+        }
+    }
+
+    &__grade--reaction {
+        color: black;
+    }
+
+    &__grade--memory {
+        color: black;
+    }
+
+    &__grade--verbal {
+        color: black;
+    }
+
+    &__grade--visual {
+        color: black;
     }
 
     &__continue-btn {
-        font : {
+        font: {
             family: $font-stack;
             size: 1.8rem;
             weight: $bold;
@@ -75,5 +131,10 @@
         margin-top: 0.9rem;
         padding: 1.5rem;
         width: 100%;
+
+        @media screen and (min-width: $mobile) {
+            font-size: 1.8rem;
+            margin-top: 2.9rem;
+        }
     }
 }

@@ -12,6 +12,9 @@
     background-repeat: no-repeat;
 
     @media  screen and (min-width: $mobile) {
+        align-items: flex-start;
         background-image: url("../design/desktop-design.jpg");
+        background-position: center;
+        min-height: 51rem;
     }
 }
