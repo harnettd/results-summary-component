@@ -3,15 +3,20 @@
 @import "fonts";
 
 .results-card {
+    background-image: linear-gradient($light-slate-blue, $light-royal-blue);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
     box-sizing: border-box;
     padding: 2.3rem 5rem 2.5rem;
 
     @media screen and (min-width: $mobile) {
+        border-radius: 0;
         padding: 4rem 4.1rem 3.8rem 4.1rem;
         width: 50%;
     }
 
     &__title {
+        color: $light-lavender;
         font: {
             family: $font-stack;
             size: 1.8rem;
@@ -29,6 +34,7 @@
     }
 
     &__score-container {
+        background-image: linear-gradient($violet-blue, $persian-blue);
         border-radius: 50%;
         box-sizing: border-box;
         display: flex;
@@ -46,6 +52,8 @@
     }
 
     &__score {
+        color: $white;
+
         font: {
             family: $font-stack;
             size: 6rem;
@@ -62,6 +70,8 @@
     }
 
     &__from {
+        color: $grey;
+
         font: {
             family: $font-stack;
             size: 1.65rem;
@@ -77,6 +87,8 @@
     }
 
     &__assessment {
+        color: $white;
+
         font: {
             family: $font-stack;
             size: 2.5rem;
@@ -94,6 +106,8 @@
     }
 
     &__copy {
+        color: $light-lavender;
+
         font: {
             family: $font-stack;
             size: 1.48rem;

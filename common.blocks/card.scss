@@ -1,6 +1,8 @@
 @import "breakpoints";
+@import "colors";
 
 .card {
+    background-color: $white;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -11,6 +13,4 @@
         flex-direction: row;
         width: 73.6rem;
     }
-
-    opacity: 0.5;
 }

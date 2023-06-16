@@ -1,20 +1,6 @@
-@import "breakpoints";
-
 .card-wrapper {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     justify-content: center;
     min-height: 100vh;
-
-    background-color: gray;
-    background-image: url("../design/mobile-design.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-
-    @media  screen and (min-width: $mobile) {
-        align-items: flex-start;
-        background-image: url("../design/desktop-design.jpg");
-        background-position: center;
-        min-height: 51rem;
-    }
 }

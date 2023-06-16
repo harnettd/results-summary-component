@@ -12,6 +12,8 @@
     }
 
     &__title {
+        color: $dark-gray-blue;
+
         font: {
             family: $font-stack;
             size: 1.8rem;
@@ -41,19 +43,19 @@
     }
 
     &__row--reaction {
-        background-color: gray;
+        background-color: $light-red-bg;
     }
 
     &__row--memory {
-        background-color: gray;
+        background-color: $orangey-yellow-bg;
     }
 
     &__row--verbal {
-        background-color: gray;
+        background-color: $green-teal-bg;
     }
 
     &__row--visual {
-        background-color: gray;
+        background-color: $cobalt-blue-bg;
     }
 
     &__img {
@@ -74,22 +76,24 @@
     }
 
     &__category--reaction {
-        color: black;
+        color: $light-red;
     }
 
     &__category--memory {
-        color: black;
+        color: $orangey-yellow;
     }
 
     &__category--verbal {
-        color: black;
+        color: $green-teal;
     }
 
     &__category--visual {
-        color: black;
+        color: $cobalt-blue;
     }
 
     &__grade {
+        color: $grey;
+
         font: {
             family: $font-stack;
             size: 1.65rem;
@@ -105,29 +109,33 @@
     }
 
     &__grade--reaction {
-        color: black;
+        color: $dark-gray-blue;
     }
 
     &__grade--memory {
-        color: black;
+        color: $dark-gray-blue;
     }
 
     &__grade--verbal {
-        color: black;
+        color: $dark-gray-blue;
     }
 
     &__grade--visual {
-        color: black;
+        color: $dark-gray-blue;
     }
 
     &__continue-btn {
+        color: $white;
+        background-color: $dark-gray-blue;
+        border: none;
+        border-radius: 2.6rem;
+
         font: {
             family: $font-stack;
             size: 1.8rem;
             weight: $bold;
         }
 
-        border-radius: 2.6rem;
         margin-top: 0.9rem;
         padding: 1.5rem;
         width: 100%;
