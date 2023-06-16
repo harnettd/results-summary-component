@@ -254,6 +254,10 @@ html {
     margin-top: 2.9rem;
   }
 }
+.summary-card__continue-btn:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}
 
 .attribution {
   font-size: 11px;

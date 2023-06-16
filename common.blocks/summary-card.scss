@@ -145,4 +145,9 @@
             margin-top: 2.9rem;
         }
     }
+
+    &__continue-btn:hover {
+        background-image: linear-gradient($light-slate-blue, $light-royal-blue);
+        cursor: pointer;
+    }
 }
