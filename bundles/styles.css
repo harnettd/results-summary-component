@@ -173,16 +173,16 @@ html {
     padding: 1.7rem 1.6rem;
   }
 }
-.summary-card__row--reaction {
+.summary-card__row--0 {
   background-color: hsl(0, 100%, 98%);
 }
-.summary-card__row--memory {
+.summary-card__row--1 {
   background-color: hsl(39, 100%, 98%);
 }
-.summary-card__row--verbal {
+.summary-card__row--2 {
   background-color: hsl(166, 100%, 98%);
 }
-.summary-card__row--visual {
+.summary-card__row--3 {
   background-color: hsl(234, 85%, 98%);
 }
 .summary-card__img {
@@ -199,16 +199,16 @@ html {
     font-size: 1.8rem;
   }
 }
-.summary-card__category--reaction {
+.summary-card__category--0 {
   color: hsl(0, 100%, 67%);
 }
-.summary-card__category--memory {
+.summary-card__category--1 {
   color: hsl(39, 100%, 56%);
 }
-.summary-card__category--verbal {
+.summary-card__category--2 {
   color: hsl(166, 100%, 37%);
 }
-.summary-card__category--visual {
+.summary-card__category--3 {
   color: hsl(234, 85%, 45%);
 }
 .summary-card__grade {
@@ -224,16 +224,16 @@ html {
     letter-spacing: 0;
   }
 }
-.summary-card__grade--reaction {
+.summary-card__grade--0 {
   color: hsl(224, 30%, 27%);
 }
-.summary-card__grade--memory {
+.summary-card__grade--1 {
   color: hsl(224, 30%, 27%);
 }
-.summary-card__grade--verbal {
+.summary-card__grade--2 {
   color: hsl(224, 30%, 27%);
 }
-.summary-card__grade--visual {
+.summary-card__grade--3 {
   color: hsl(224, 30%, 27%);
 }
 .summary-card__continue-btn {

@@ -15,18 +15,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+
   <!-- local stylesheet -->
   <link rel="stylesheet" href="bundles/styles.min.css">
 </head>
 
 <body class="page">
+
   <main class="card-wrapper">
     <div class="card">
 
       <div class="results-card">
         <h1 class="results-card__title">Your Result</h1>
         <div class="results-card__score-container">
-          <p class="results-card__score">76</p>
+          <p class="results-card__score"></p>
           <p class="results-card__from">of 100</p>
         </div>
         <h2 class="results-card__assessment">Great</h2>
@@ -36,46 +41,46 @@
       <div class="summary-card">
         <h3 class="summary-card__title">Summary</h3>
 
-        <div class="summary-card__row summary-card__row--reaction">
+        <div class="summary-card__row summary-card__row--0">
           <div>
-            <img class="summary-card__img" src="assets/images/icon-reaction.svg">
-            <span class="summary-card__category summary-card__category--reaction">Reaction</span>
+            <img class="summary-card__img summary-card__img--0">
+            <span class="summary-card__category summary-card__category--0"></span>
           </div>
-          <div class="summary-card__grade">
-            <span class="summary-card__grade summary-card__grade--reaction">80</span>
+          <div>
+            <span class="summary-card__grade summary-card__grade--0"></span>
             <span class="summary-card__grade"> / 100</span>
           </div>
         </div>
 
-        <div class="summary-card__row summary-card__row--memory">
+        <div class="summary-card__row summary-card__row--1">
           <div>
-            <img class="summary-card__img" src="assets/images/icon-memory.svg">
-            <span class="summary-card__category summary-card__category--memory">Memory</span>
+            <img class="summary-card__img summary-card__img--1">
+            <span class="summary-card__category summary-card__category--1"></span>
           </div>
           <div>
-            <span class="summary-card__grade summary-card__grade--memory">92</span>
+            <span class="summary-card__grade summary-card__grade--1"></span>
             <span class="summary-card__grade"> / 100</span>
           </div>
         </div>
 
-        <div class="summary-card__row summary-card__row--verbal">
+        <div class="summary-card__row summary-card__row--2">
           <div>
-            <img class="summary-card__img" src="assets/images/icon-verbal.svg">
-            <span class="summary-card__category summary-card__category--verbal">Verbal</span>
+            <img class="summary-card__img summary-card__img--2">
+            <span class="summary-card__category summary-card__category--2"></span>
           </div>
           <div>
-            <span class="summary-card__grade summary-card__grade--verbal">61</span>
+            <span class="summary-card__grade summary-card__grade--2"></span>
             <span class="summary-card__grade"> / 100</span>
           </div>
         </div>
 
-        <div class="summary-card__row summary-card__row--visual">
+        <div class="summary-card__row summary-card__row--3">
           <div>
-            <img class="summary-card__img" src="assets/images/icon-visual.svg">
-            <span class="summary-card__category summary-card__category--visual">Visual</span>
+            <img class="summary-card__img summary-card__img--3">
+            <span class="summary-card__category summary-card__category--3"></span>
           </div>
           <div>
-            <span class="summary-card__grade summary-card__grade--visual">72</span>
+            <span class="summary-card__grade summary-card__grade--3"></span>
             <span class="summary-card__grade"> / 100</span>
           </div>
         </div>
@@ -91,7 +96,7 @@
     Coded by <a href="#">Your Name Here</a>.
   </footer> -->
 
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
 
 </body>
 

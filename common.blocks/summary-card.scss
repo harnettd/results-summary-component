@@ -42,19 +42,19 @@
         }
     }
 
-    &__row--reaction {
+    &__row--0 {
         background-color: $light-red-bg;
     }
 
-    &__row--memory {
+    &__row--1 {
         background-color: $orangey-yellow-bg;
     }
 
-    &__row--verbal {
+    &__row--2 {
         background-color: $green-teal-bg;
     }
 
-    &__row--visual {
+    &__row--3 {
         background-color: $cobalt-blue-bg;
     }
 
@@ -75,19 +75,19 @@
         }
     }
 
-    &__category--reaction {
+    &__category--0 {
         color: $light-red;
     }
 
-    &__category--memory {
+    &__category--1 {
         color: $orangey-yellow;
     }
 
-    &__category--verbal {
+    &__category--2 {
         color: $green-teal;
     }
 
-    &__category--visual {
+    &__category--3 {
         color: $cobalt-blue;
     }
 
@@ -108,19 +108,19 @@
         }
     }
 
-    &__grade--reaction {
+    &__grade--0 {
         color: $dark-gray-blue;
     }
 
-    &__grade--memory {
+    &__grade--1 {
         color: $dark-gray-blue;
     }
 
-    &__grade--verbal {
+    &__grade--2 {
         color: $dark-gray-blue;
     }
 
-    &__grade--visual {
+    &__grade--3 {
         color: $dark-gray-blue;
     }
 
