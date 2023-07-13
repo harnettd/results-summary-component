@@ -5,11 +5,12 @@ $green-teal: hsl(166, 100%, 37%);
 $cobalt-blue: hsl(234, 85%, 45%);
 
 
-// Primary
-$light-red-bg: hsl(0, 100%, 98%);
-$orangey-yellow-bg: hsl(39, 100%, 98%);
-$green-teal-bg: hsl(166, 100%, 98%);
-$cobalt-blue-bg: hsl(234, 85%, 98%);
+// Backgrounds
+$opacity: 0.075;
+$light-red-bg: hsla(0, 100%, 67%, $opacity);
+$orangey-yellow-bg: hsla(39, 100%, 56%, $opacity);
+$green-teal-bg: hsla(166, 100%, 37%, $opacity);
+$cobalt-blue-bg: hsla(234, 85%, 45%, $opacity);
 
 
 // Gradients
