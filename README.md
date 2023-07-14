@@ -79,3 +79,4 @@ for (let row = 0; row <= 3; row++) {
 ## Acknowledgments
 
 - Thanks to [Frontend Mentor](https://www.frontendmentor.io/) for posting this challenge.
+- Thanks to [@agomez99](https://www.frontendmentor.io/profile/agomez99) for providing helpful feedback.
