@@ -12,3 +12,4 @@ $(DIST)/styles.css: $(SCSS)
 
 clean:
 	rm $(DIST)/styles.css $(DIST)/styles.css.map $(DIST)/styles.min.css
+	

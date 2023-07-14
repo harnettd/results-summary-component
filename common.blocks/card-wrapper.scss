@@ -1,6 +1,12 @@
+@import "../common.blocks/breakpoints";
+
 .card-wrapper {
-    align-items: center;
+    align-items: start;
     display: flex;
     justify-content: center;
     min-height: 100vh;
+
+    @media screen and (min-width: $mobile) {
+        align-items: center;
+    };
 }

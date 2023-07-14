@@ -4,13 +4,19 @@ html {
 
 .page {
   background-color: hsl(221, 100%, 96%);
+  margin: 0;
 }
 
 .card-wrapper {
-  align-items: center;
+  align-items: start;
   display: flex;
   justify-content: center;
   min-height: 100vh;
+}
+@media screen and (min-width: 800px) {
+  .card-wrapper {
+    align-items: center;
+  }
 }
 
 .card {
