@@ -6,7 +6,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,8 +15,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,83 +27,55 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Desktop screenshot](assets/images/screenshot-desktop.png)
+![Mobile screenshot](assests/images/screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/harnettd/results-summary-component](https://github.com/harnettd/results-summary-component)
+- Live Site URL: [https://harnettd.github.io/results-summary-component/](https://harnettd.github.io/results-summary-component/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- HTML5
+- CSS with Flexbox, BEM methodology, and Sass
+- Javascript and JQuery
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In completing this project, I learned how to
 
-To see how you can add code snippets, see below:
+- apply a color gradient as a `background-image`
+- use hsla to specify colors and opacity
+- minimize CSS (although it was hardly necessary for such a small project)
+- use JQuery to select HTML elements and change their text and attributes, _i.e.,_
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```javascript
+for (let row = 0; row <= 3; row++) {
+    $(`.summary-card__img--${row}`).attr("src", data[row].icon)
+    $(`.summary-card__category--${row}`).text(data[row].category)
+    $(`.summary-card__grade--${row}`).text(data[row].score)
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Since I learned how to minimize CSS, I should probably learn how to minimize Javascript as well.
+- While I do appreciate BEM methodology for how it helps me organize my CSS thinking and code, using BEM does produce a lot of files and directories compared to simply putting all of my CSS into a single styles.css file. This necessitates the project having a build step. On this (and my previous) project, I used Make for building. On my next project, I plan to use Gulp for building.
+- Reading in a local JSON file was surprisingly difficult. In the end, I edited the data.json file so that it defined data to be a list of objects. Then, I loaded the file in index.html using a script tag. But to do this, I needed to be able to edit data.json which won't always be the case. So, what's the best way to read a local JSON file?
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3Schools HTML HSL and HSLA Colors](https://www.w3schools.com/html/html_colors_hsl.asp) - This W3S page explains the H, S, L, and A from hsla and has several demos with sliders that let you see the effects of changing each of the values.
+- [Learn Makefiles](https://makefiletutorial.com/) - I hadn't written a Makefile in a while. This webpage served as an excellent refresher.
+- [JQuery API Documentation](https://api.jquery.com/) - This is the official JQuery documentation site. It's fairly easy to read and contains many code snippets.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Github - [Derek Harnett](https://github.com/harnettd)
+- Frontend Mentor - [@harnettd](https://www.frontendmentor.io/profile/harnettd)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Thanks to [Frontend Mentor](https://www.frontendmentor.io/) for posting this challenge.
