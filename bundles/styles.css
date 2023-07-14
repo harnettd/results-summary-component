@@ -3,7 +3,7 @@ html {
 }
 
 .page {
-  background-color: hsl(221, 100%, 96%);
+  background-color: hsla(221, 100%, 96%, 0.3);
   margin: 0;
 }
 
@@ -36,14 +36,13 @@ html {
 
 .results-card {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  border-bottom-left-radius: 3rem;
-  border-bottom-right-radius: 3rem;
+  border-radius: 0 0 3rem 3rem;
   box-sizing: border-box;
   padding: 2.3rem 5rem 2.5rem;
 }
 @media screen and (min-width: 800px) {
   .results-card {
-    border-radius: 0;
+    border-radius: 3rem;
     padding: 4rem 4.1rem 3.8rem 4.1rem;
     width: 50%;
   }

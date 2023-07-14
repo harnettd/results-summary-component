@@ -4,13 +4,12 @@
 
 .results-card {
     background-image: linear-gradient($light-slate-blue, $light-royal-blue);
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
+    border-radius: 0 0 3rem 3rem;
     box-sizing: border-box;
     padding: 2.3rem 5rem 2.5rem;
 
     @media screen and (min-width: $mobile) {
-        border-radius: 0;
+        border-radius: 3rem;
         padding: 4rem 4.1rem 3.8rem 4.1rem;
         width: 50%;
     }
